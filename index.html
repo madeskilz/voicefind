@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Voice Find</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/main.png" />
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="bgbody">
+    <h1>Find My Device</h1>
+    <p>Say The Command!!!</p>
+
+    <button id="stopSiren" class="btn-stop" onclick="stopPB();">FOUND</button>
+    <div>
+        <p class="output">...diagnostic messages</p>
+        <audio src="asset/audio.mp3" id="siren" controls hidden autobuffer loop style="display:none;"></audio>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
